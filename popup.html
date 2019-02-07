@@ -3,13 +3,13 @@
 
 <head>
     <style>
-        #go {
-            height: 30px;
-            width: 36px;
+        #go, #copy {
+            width: 47px;
             margin-left: 8px;
         }
         #url {
-            width: calc(100% - 52px);
+            width: calc(100% - 61px);
+            min-height: 38px;
             float: left;
             margin-bottom: 8px;
         }
@@ -18,7 +18,10 @@
 
 <body style="width: 740px;">
     <textarea id="url"></textarea>
-    <button id="go">Go</button>
+    <div id="buttons">
+        <button id="go">Go</button>
+        <button id="copy">Copy</button>
+    </div>
     <script src="popup.js"></script>
 </body>
 
